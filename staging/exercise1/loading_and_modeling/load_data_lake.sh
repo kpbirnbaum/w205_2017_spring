@@ -41,19 +41,27 @@ NEW_FILE3="Measures.csv"
 tail -n +2 "$OLD_FILE3" > $NEW_FILE3
 
 OLD_FILE4="hvbp_hcahps_11_10_2016.csv"
-NEW_FILE4="surveys_responses.csv"
+NEW_FILE4="survey_responses.csv"
 
 tail -n +2 "$OLD_FILE4" > $NEW_FILE4 
 
 # create HDFS directory
 hdfs dfs -mkdir /user/w205/hospital_compare
 
+# create a directory for each file and copy each file to hdfs
+
+hdfs dfs -mkdir /user/w205/hospital_compare/hospitals
+hdfs dfs -mkdir /user/w205/hospital_compare/effective_care
+hdfs dfs -mkdir /user/w205/hospital_compare/readmissions
+hdfs dfs -mkdir /user/w205/hospital_compare/measures
+hdfs dfs -mkdir /user/w205/hospital_compare/surveys
+
 # Copy files to HDFS
-hdfs dfs -put $NEW_FILE /user/w205/hospital_compare
-hdfs dfs -pu $NEW_FILE1 /user/w205/hospital_compare
-hdfs dfs -pu $NEW_FILE2 /user/w205/hospital_compare
-hdfs dfs -pu $NEW_FILE3 /user/w205/hospital_compare
-hdfs dfs -pu $NEW_FILE4 /user/w205/hospital_compare
+hdfs dfs -put $NEW_FILE /user/w205/hospital_compare/hospitals
+hdfs dfs -put $NEW_FILE1 /user/w205/hospital_compare/effective_care
+hdfs dfs -put $NEW_FILE2 /user/w205/hospital_compare/readmissions
+hdfs dfs -put $NEW_FILE3 /user/w205/hospital_compare/measures
+hdfs dfs -put $NEW_FILE4 /user/w205/hospital_compare/surveys
 
 
 
