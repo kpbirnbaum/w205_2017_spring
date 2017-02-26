@@ -15,8 +15,8 @@ from measures;
 
 INSERT INTO TABLE measures_1 
 SELECT DISTINCT 
-measure_name,
 measure_id,
+measure_name,
 CAST (
 concat(substr(measure_start_date,7,4),'-',
 substr(measure_start_date,1,2),'-',
