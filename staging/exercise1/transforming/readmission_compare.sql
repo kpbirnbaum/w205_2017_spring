@@ -2,7 +2,6 @@ Drop table readmission_compare;
 
 Create Table readmission_compare as select
 r.Provider_ID,
-r.State,
 r.measure_ID,
 avg(cast(r.National_Comparison as decimal)) National_comparison,
 avg(r.score) score

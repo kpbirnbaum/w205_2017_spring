@@ -3,7 +3,6 @@ Drop table Measure_Scores;
 Create Table Measure_Scores as Select
 
 ms.Provider_ID,
-ms.State,
 ms.Measure_ID,
 avg(ms.score) avg_score,
 sum(ms.sample) sample_sum

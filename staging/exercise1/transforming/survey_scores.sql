@@ -3,7 +3,6 @@ Drop table Survey_scores;
 Create Table Survey_Scores as Select
 
 Provider_number as provider_ID,
-State,
 cast(overall_rating_of_hospital_performance_rate as int) as performance_rate,
 
 case
