@@ -1,0 +1,14 @@
+Here I am checking the correlation between the survey scores and the scores that I created as well as the correlation between survey scores and the overall hospital scores given and survey scores and readmission compare rate. My scores have a negative correlation between -.26 and -.37 with survey scores whereas the correlation with overall hospital scores falls between .5 and .6 and the correlation with hospital compare is about .21. 
+
+I would therefore conclude that either the surveys had a significant effect on how the overall
+rating for the hospital was calculated and the score by procedures were not
+taken into account or that my measure is inaccurate due to the reasons
+mentioned in my first response (unimportant procedure getting too much weight).
+
+The results of my findings are below:
+
+mscore	rating v achievescore	rating v performscore	myscore v dem
+myscore v achievscore	myscore v performscore	readmis v dimscore
+readmis v achievscore	readmis v performscore
+0.521245975	0.533037621	0.58898777	-0.3456282	-0.334384566
+-0.251701823	0.20548732	0.217043478	0.211404384

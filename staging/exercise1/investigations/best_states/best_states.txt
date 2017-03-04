@@ -1,0 +1,17 @@
+For this table I simply took the tables from best_hospitals and grouped by state ensuring that there were at least 10 examples for the given state. 
+As expected I found the same issue I found in solution 1 persisted when grouping the hospital values
+by state.
+
+Below are the top ten states:
+
+State	hosp_count	Overall_score	Overall_rating	Readmission_compare
+MA	60	1.374226775	3.192982456	0.021428572
+RI	11	1.323847239	3.272727273	0.007575757
+CT	29	1.235853115	2.714285714	-0.000821018
+NJ	64	0.953921843	2.546875	-0.029543373
+NC	102	0.939668229	3.106382979	-0.023351158
+VA	79	0.898530731	3.012987013	-0.033781302
+SC	55	0.83483084	3.211538462	-0.005024975
+NY	160	0.830597857	2.311688312	-0.039275863
+PA	161	0.776948576	3.006756757	-0.004882902
+FL	173	0.739862534	2.658823529	-0.040443628

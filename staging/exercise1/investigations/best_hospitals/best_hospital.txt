@@ -1,0 +1,36 @@
+The goal was to define the top 10 hospitals in terms of high-quality care i.e those that most consistently score high for a variety of procedures. Since both the effective care table and the readmissions table had measures I decided to use both in my calculation of high quality care. I took the weighted average of each according to how many hospitals provided the given measure (for the readmission measures I took 100-score since a lower score is deemed a better score). 
+
+I then normalized the scores by subtracting the mean and dividing by the standard deviation and added the overall score of the scores grouped by hospital.
+
+I deemed the top 10 scores the top 10 hospitals.
+
+Provider_ID	Hospital_Name	Overall_score	Overall_rating
+Readmission_compare
+360118	OHIOHEALTH MANSFIELD HOSPITAL	2.943026686	2	-0.07142857
+50026	GROSSMONT HOSPITAL	2.917895441	3	-0.14285714
+220060	BETH ISRAEL DEACONESS HOSPITAL - PLYMOUTH	2.908373519	3
+0
+220074	SOUTHCOAST HOSPITAL GROUP, INC	2.899212093	3	0.07142857
+10078	NORTHEAST ALABAMA REGIONAL MEDICAL CENTER	2.796452917	2
+0.07142857
+220029	ANNA JAQUES HOSPITAL	2.753822694	3	0
+440053	SAINT THOMAS RUTHERFORD HOSPITAL	2.748673247	3
+-0.08333333
+250048	ST DOMINIC-JACKSON MEMORIAL HOSPITAL	2.722259121	3	0
+220001	HEALTHALLIANCE HOSPITALS, INC	2.675509236	3	0
+360072	FAIRFIELD MEDICAL CENTER	2.661981873	2	0
+
+
+My table contains all of the top scores, but the overall ratings and
+readmission compare rates aren't where I hoped they would be. I stuck with
+my score since I do not have an in depth view of how their rating was computed
+and mine went in depth in taking into account their scores according to
+measure and readmission. My table contains all of the top scores, but the
+overall ratings and readmission compare rates aren't where I hoped they
+would be. I kept hospital overall score (which I didn't use in my measure as I
+felt this would be cheating in finding an overall score for the definition of
+high quality care)
+to see how I compared and there was actually a negative correlation. Although
+I will admit that the factor that throws off the correlation may be related to
+unimportant measures conducted by more hospitals getting a heavier weight. I
+have tried filtering it down though to no avail.

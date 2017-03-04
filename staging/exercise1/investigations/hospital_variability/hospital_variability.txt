@@ -1,0 +1,46 @@
+For measure variability I simply looked at the measures with the highest standard deviation in scores and ranked them accordingly. I filtered out any procedures that were not performed by at least 100 hospitals.
+
+In terms of finding procedure variability checking the overall average spread
+seemed to be the best measure.
+
+Results are below:
+
+Measure_name	Measure_ID	Measure_std	num_hosp
+Appropriate Follow-Up Interval for Normal Colonoscopy in Average Risk Patients
+OP_29	24.95176302	2416
+Admit Decision Time to ED Departure Time for Admitted Patients	ED_2b
+22.12350809	2211
+Colonoscopy Interval for Patients with a History of Adenomatous Polyps -
+Avoidance of Inappropriate Use	OP_30	20.27667421	2057
+Head CT or MRI Scan Results for Acute Ischemic Stroke or Hemorrhagic Stroke
+Patients who Received Head CT or MRI Scan Interpretation Within 45 minutes of
+ED Arrival	OP_23	19.34856215	1217
+Thrombolytic Therapy	STK_4	18.48372358	561
+Median Time to Transfer to Another Facility for Acute Coronary Intervention-
+Reporting Rate	OP_3b	16.90079477	375
+Median Time to Pain Management for Long Bone Fracture	OP_21	16.18788598
+3366
+Healthcare workers given influenza vaccination	IMM_3_OP_27_FAC_ADHPCT
+14.88256579	3976
+Median Time from ED Arrival to Provider Contact for ED patients	OP_20
+14.86550442	3670
+Influenza Immunization	IMM_2	13.90660851	3482
+
+
+I know it may be difficult to read here given the length of some of the
+measure names I therefore provided another table with just measure_ids so you
+can get a better idea of what the table looks like:
+
+Measure_ID	Measure_std	num_hosp
+OP_29	24.95176302	2416
+ED_2b	22.12350809	2211
+OP_30	20.27667421	2057
+OP_23	19.34856215	1217
+STK_4	18.48372358	561
+OP_3b	16.90079477	375
+OP_21	16.18788598	3366
+IMM_3_OP_27_FAC_ADHPCT	14.88256579	3976
+OP_20	14.86550442	3670
+IMM_2	13.90660851	3482
+
+
